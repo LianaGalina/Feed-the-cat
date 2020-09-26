@@ -234,6 +234,13 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.cards__item {
+  margin-bottom: 50px;
 }
 
 .cards__item:not(:last-child) {
@@ -377,4 +384,19 @@ body {
 
 .card__check {
   background-color: #d91667;
+}
+
+@media (max-width: 1140px) {
+  .wrapper {
+    height: auto;
+  }
+
+  .header__title {
+    margin-top: 40px;
+  }
+
+  .cards__item:not(:last-child),
+  .cards__item {
+    margin: 40px;
+  }
 }
